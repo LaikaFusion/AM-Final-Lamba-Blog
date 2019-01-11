@@ -19,7 +19,7 @@ class BlogIndex extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <Bio />
-        {posts.map(({ node }) => {
+        <div style={{flexGrow:1}}> {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
@@ -36,7 +36,8 @@ class BlogIndex extends React.Component {
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           )
-        })}
+        })}</div>
+       
       </Layout>
     )
   }

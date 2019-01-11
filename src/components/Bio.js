@@ -14,7 +14,7 @@ function Bio() {
           <div
             style={{
               display: `flex`,
-              marginBottom: rhythm(2.5),
+              marginBottom: rhythm(.5),
             }}
           >
             <Image
@@ -22,17 +22,17 @@ function Bio() {
               alt={author}
               style={{
                 marginRight: rhythm(1 / 2),
-                marginBottom: 0,
+                marginTop: 0,
                 minWidth: 50,
                 borderRadius: `100%`,
+                objectPosition: "center top"
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+              This is a blog written by <strong>Andrew McLaughlin</strong>
+              <br/>
+              <a href={`${social.github}`}>
+                Look at my Github to see what I've been working on lately
               </a>
             </p>
           </div>
@@ -44,9 +44,9 @@ function Bio() {
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+    avatar: file(absolutePath: { regex: "/me.jpg/" }) {
       childImageSharp {
-        fixed(width: 50, height: 50) {
+        fixed(width: 100, height: 100, cropFocus:NORTH) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -55,7 +55,7 @@ const bioQuery = graphql`
       siteMetadata {
         author
         social {
-          twitter
+          github
         }
       }
     }
