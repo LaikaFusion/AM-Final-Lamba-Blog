@@ -1,5 +1,3 @@
- 
-
 ---
 title: Week 3 Blog Entry
 date: '2019-01-25T11:11:00'
