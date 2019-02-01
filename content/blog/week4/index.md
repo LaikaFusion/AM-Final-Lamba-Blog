@@ -1,7 +1,5 @@
- 
-
 ---
-title: Week 3 Blog Entry
+title: Week 4 Blog Entry
 date: '2019-02-01T11:20:00'
 ---
 
