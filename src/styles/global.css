@@ -1,7 +1,9 @@
 html {
-  background-color: #386C0B;
+  background-image: url(../../content/assets/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  background-attachment: fixed;
   margin: 30px;
-}
-a{
-  color: #31D843
+  font-family: sans-serif;
 }
