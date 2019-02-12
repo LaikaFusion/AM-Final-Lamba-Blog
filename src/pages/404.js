@@ -9,11 +9,27 @@ class NotFoundPage extends React.Component {
     const siteTitle = data.site.siteMetadata.title
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <div
+        style={{
+          display: 'flex',
+          height: '92vh',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
         <SEO title="404: Not Found" />
-        <h1>Not Found</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-      </Layout>
+        <div
+          style={{
+            fontSize: '128px',
+            backgroundColor: 'lightgray',
+            padding: '2rem',
+            border: '1rem black solid',
+            borderRadius: '3rem',
+          }}
+        >
+          404
+        </div>
+      </div>
     )
   }
 }
