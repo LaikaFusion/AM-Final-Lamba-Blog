@@ -12,11 +12,11 @@ class Layout extends React.Component {
     if (location.pathname === rootPath) {
       header = (
         <h2
+        className="Mono"
           style={{
             ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
-
             textAlign: 'center',
           }}
         >
@@ -35,6 +35,8 @@ class Layout extends React.Component {
     } else {
       header = (
         <h3
+        className="Mono"
+
           style={{
             marginTop: 0,
           }}
@@ -87,7 +89,7 @@ class Layout extends React.Component {
           </div>
 
           <footer>
-            © {new Date().getFullYear()}, Built with
+            © {new Date().getFullYear()}, Built with{" "} 
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>
         </div>

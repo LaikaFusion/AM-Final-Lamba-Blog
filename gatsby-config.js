@@ -3,7 +3,7 @@ module.exports = {
     title: `AM Lambda Final Blog`,
     author: `Andrew McLaughlin`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://optimistic-williams-acbaf1.netlify.com/`,
+    siteUrl: `https://blog.andrewmclaughl.in/`,
     social: {
       github: `https://github.com/LaikaFusion`,
     },
