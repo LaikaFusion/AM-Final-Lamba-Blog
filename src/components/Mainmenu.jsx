@@ -38,10 +38,10 @@ class MenuBar extends Component {
             <a href="https://andrewmclaughl.in" className="menuButton">
               Home
             </a>
-            <a href="https://andrewmclaughl.in/about/" className="menuButton">
+            <a href="https://andrewmclaughl.in/about" className="menuButton">
               About
             </a>
-            <a href="https://andrewmclaughl.in/demos/" className="menuButton">
+            <a href="https://andrewmclaughl.in/demos" className="menuButton">
               Demos
             </a>
             <Link to={'/'} className="menuButton selected">Blog</Link>{' '}
