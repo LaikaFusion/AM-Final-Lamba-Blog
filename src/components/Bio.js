@@ -15,6 +15,7 @@ function Bio() {
             style={{
               display: `flex`,
               marginBottom: rhythm(.5),
+              justifyContent:'center'
             }}
           >
             <Image

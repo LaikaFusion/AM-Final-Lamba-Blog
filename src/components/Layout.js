@@ -59,8 +59,7 @@ class Layout extends React.Component {
        <Mainmenu />
         <div
           style={{
-            marginLeft: `auto`,
-            marginRight: `auto`,
+     
             maxWidth: '80%',
             padding: `${rhythm(3 / 4)}`,
             backgroundColor: 'lightgrey',
@@ -71,7 +70,7 @@ class Layout extends React.Component {
             flexDirection: 'column',
             justifyContent: 'space-between',
             border: '1rem black solid',
-            marginTop: '1em'
+            margin: '1em auto'
           }}
         >
           <div>{header}</div>
