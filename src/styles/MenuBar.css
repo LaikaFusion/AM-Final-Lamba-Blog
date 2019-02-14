@@ -22,6 +22,9 @@
   justify-content: center;
   align-items: center;
 }
+a.menuButton{
+  text-decoration: none;
+}
 .menuButton:hover {
   font-weight: bold;
 }
