@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `AM Lambda Final Blog`,
+    title: `AM Blog`,
     author: `Andrew McLaughlin`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `The official blog of Andrew McLaughlin`,
     siteUrl: `https://blog.andrewmclaughl.in/`,
     social: {
       github: `https://github.com/LaikaFusion`,
@@ -57,11 +57,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Andrew McLaughlin's Blog`,
+        short_name: `AM Blog`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
+        background_color: `lightgrey`,
+        theme_color: `#386C0B`,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,
       },

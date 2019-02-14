@@ -60,17 +60,18 @@ class Layout extends React.Component {
         <div
           style={{
      
-            maxWidth: '80%',
+            maxWidth: `calc(80.5% + ${rhythm(3 / 4)})`,
             padding: `${rhythm(3 / 4)}`,
             backgroundColor: 'lightgrey',
             minHeight: '92vh',
             overflow: 'auto',
-            borderRadius: '1.5em',
+            borderRadius: '1em',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-between',
-            border: '1rem black solid',
-            margin: '1em auto'
+            border: '.73rem black solid',
+            margin: '.9em auto',
+            boxSizing:'border-box'
           }}
         >
           <div>{header}</div>

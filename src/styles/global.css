@@ -8,8 +8,15 @@ html {
   background-attachment: fixed;
   /* margin: 30px; */
   font-family: sans-serif;
+  box-sizing: border-box;
+  padding:0px;
+  margin:0px;
 }
 a:hover {
   color: black;
   cursor: pointer;
+}
+body{
+  box-sizing: content-box;
+
 }

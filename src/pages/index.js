@@ -19,25 +19,32 @@ class BlogIndex extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <Bio />
-        <div style={{flexGrow:1}}> {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
+        <div style={{ flexGrow: 1 }}>
+          {' '}
+          {posts.map(({ node }) => {
+            const title = node.frontmatter.title || node.fields.slug
+            return (
+              <Link
+                key={node.fields.slug}
+                style={{ boxShadow: `none`, textDecoration: 'none' }}
+                to={node.fields.slug}
               >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
-          )
-        })}</div>
-       
+                <div>
+                  <h3
+                    style={{
+                      marginBottom: rhythm(1 / 4),
+                      textDecoration: 'underline',
+                    }}
+                  >
+                    {title}
+                  </h3>
+                  <small>{node.frontmatter.date}</small>
+                  <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                </div>
+              </Link>
+            )
+          })}
+        </div>
       </Layout>
     )
   }
@@ -55,7 +62,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
+          excerpt(pruneLength: 250)
           fields {
             slug
           }

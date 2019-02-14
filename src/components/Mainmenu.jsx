@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'gatsby'
 import '../styles/MenuBar.css'
 
 class MenuBar extends Component {
@@ -43,7 +44,7 @@ class MenuBar extends Component {
             <a href="https://andrewmclaughl.in/demos/" className="menuButton">
               Demos
             </a>
-            <a className="menuButton selected">Blog</a>{' '}
+            <Link to={'/'} className="menuButton selected">Blog</Link>{' '}
           </div>
         ) : null}
         <div className="menuArrowContainer">

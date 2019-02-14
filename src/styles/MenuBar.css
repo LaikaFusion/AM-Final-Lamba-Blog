@@ -2,11 +2,11 @@
   position: sticky;
   top: 0;
   background: lightgrey;
-  border-bottom: 1rem black solid;
-  border-left: 1rem black solid;
-  border-right: 1rem black solid;
+  border-bottom: .72rem black solid;
+  border-left: .72rem black solid;
+  border-right: .72rem black solid;
   max-width: 80%;
-  border-radius: 0 0 1.5rem 1.5rem;
+  border-radius: 0 0 1.1rem 1.1rem;
   margin: auto;
   display: flex;
   justify-content: space-around;
@@ -21,6 +21,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 1.25em;
 }
 a.menuButton{
   text-decoration: none;
