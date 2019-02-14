@@ -63,10 +63,11 @@ module.exports = {
         background_color: `lightgrey`,
         theme_color: `#386C0B`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `src/favicon.png`,
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-favicon`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
