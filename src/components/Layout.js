@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Mainmenu } from './Mainmenu'
+import Mainmenu  from './Mainmenu'
 import { rhythm, scale } from '../utils/typography'
 
 class Layout extends React.Component {
@@ -53,13 +53,13 @@ class Layout extends React.Component {
       )
     }
     return (
-      <div>
-        <div>{Mainmenu}</div>{' '}
+      <React.Fragment>
+       <Mainmenu />
         <div
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
-            maxWidth: rhythm(24),
+            maxWidth: '80%',
             padding: `${rhythm(3 / 4)}`,
             backgroundColor: 'lightgrey',
             minHeight: '92vh',
@@ -69,6 +69,7 @@ class Layout extends React.Component {
             flexDirection: 'column',
             justifyContent: 'space-between',
             border: '1rem black solid',
+            marginTop: '1em'
           }}
         >
           <div>{header}</div>
@@ -87,11 +88,10 @@ class Layout extends React.Component {
 
           <footer>
             © {new Date().getFullYear()}, Built with
-            {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>
         </div>
-      </div>
+      </React.Fragment>
     )
   }
 }
