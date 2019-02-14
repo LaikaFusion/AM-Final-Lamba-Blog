@@ -1,11 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro|Monoton");
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Monoton');
 
 html {
   background-image: url(../../content/assets/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; 
+  background-size: cover;
   background-attachment: fixed;
   /* margin: 30px; */
   font-family: sans-serif;
+}
+a:hover {
+  color: black;
+  cursor: pointer;
 }

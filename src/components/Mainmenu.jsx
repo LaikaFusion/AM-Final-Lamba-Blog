@@ -7,7 +7,7 @@ const Mainmenu = props => {
       <div className="menuButton">Home</div>
       <div className="menuButton">About</div>
       <div className="menuButton">Demos</div>
-      <div className="menuButton selected">Blog</div>
+      <a className="menuButton selected">Blog</a>
     </div>
   )
 }
