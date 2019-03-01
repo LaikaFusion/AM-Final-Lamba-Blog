@@ -61,7 +61,7 @@ class Layout extends React.Component {
           style={{
      
             maxWidth: `calc(80.5% + ${rhythm(3 / 4)})`,
-            padding: `${rhythm(3 / 4)}`,
+            padding: `${rhythm(3/4)} ${rhythm(10)}`,
             backgroundColor: 'lightgrey',
             minHeight: '92vh',
             overflow: 'auto',
